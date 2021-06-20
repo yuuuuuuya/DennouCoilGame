@@ -34,6 +34,7 @@ public class GameController : MonoBehaviour
 
             JsonClass item = JsonUtility.FromJson<JsonClass>(itemJson);
             string itemString = item.Items[0].timeSeries[0].areas[0].weatherCodes[1]; //weatherCodes配列は、朝昼夜のうち昼を選択
+            itemString = "1";
 
             // 太陽の光の色を準備
             string sunnyColorCode = "#FFFAD7";
