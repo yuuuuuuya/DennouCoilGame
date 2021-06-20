@@ -69,6 +69,8 @@ public class Player : MonoBehaviour
         }
     }
 
+    
+
     void OnCollisionEnter(Collision other)
     {
         // 地面に触れた時
