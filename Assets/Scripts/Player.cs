@@ -32,13 +32,16 @@ public class Player : MonoBehaviour
         Jump();
     }
 
+    // Animatorにキャラクターや環境のパラメーターを設定する。
     void ApplyAnimatorParameter()
     {
-        float speed = Mathf.Abs(rb.velocity.z / maxSpeedMove);
+        Vector3 movingDirection = new Vector3(rb.velocity.x, 0, rb.velocity.z);
+        float speed = Mathf.Abs(movingDirection.magnitude / maxSpeedMove);
         animator.SetFloat("Speed", speed);
 
         animator.SetBool("IsGround", isGround);
-        animator.SetFloat("FallSpeed", rb.velocity.y);    }
+        animator.SetFloat("FallSpeed", rb.velocity.y);
+    }
 
     //前進後退
     void Move()
