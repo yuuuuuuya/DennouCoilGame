@@ -9,7 +9,7 @@
   <img src="readme_img/exampleRun.gif" width="266">
 </p>
 
-# implementation
+# Implementation
 
 - ゲーミ中の天気と現実世界の天気を同期<br>
 気象庁のwebサイトにリクエストを送り、レスポンスで返ってきたJSON形式の天気予報情報をパース。<br>
